@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 624509859909595226}
   m_Layer: 0
   m_Name: Jumping Sphere
-  m_TagString: Untagged
+  m_TagString: Collidable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,4 +149,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffb9d19947c542e41b8506c8e4ad6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 1

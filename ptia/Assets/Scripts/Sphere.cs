@@ -26,6 +26,7 @@ public class Sphere : MonoBehaviour
     }
 
     void Update() {
+        // ABSTRACTION
         Move();
         Special();
     }

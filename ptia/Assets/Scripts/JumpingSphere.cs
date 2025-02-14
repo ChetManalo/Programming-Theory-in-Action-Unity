@@ -3,7 +3,8 @@ using UnityEngine;
 public class JumpingSphere : Sphere
 {
     private float jumpForce = 75f;
-    public float JumpForce { 
+    // ENCAPSULATION
+    protected float JumpForce { 
         get { return jumpForce; }
         set {
             if (value < 10) {
@@ -14,9 +15,11 @@ public class JumpingSphere : Sphere
         }
     }
 
+    // POLYMORPHISM
     protected override void Special()
     {
         if (Input.GetKeyDown(KeyCode.Space)) {
+            // INHERITANCE
             rb.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
         }
     }

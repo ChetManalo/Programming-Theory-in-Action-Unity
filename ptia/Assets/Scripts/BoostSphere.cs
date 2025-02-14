@@ -3,7 +3,8 @@ using UnityEngine;
 public class BoostSphere : Sphere
 {
     private float speedMultiplier = 5f;
-    public float SpeedMultiplier {
+    // ENCAPSULATION
+    protected float SpeedMultiplier {
         get { return speedMultiplier; }
         set { 
             if (value < 1.5) {
@@ -14,9 +15,11 @@ public class BoostSphere : Sphere
         }
     }
 
+    // POLYMORPHISM
     protected override void Special()
     {
         if (Input.GetKeyDown(KeyCode.Space)) {
+            // INHERITANCE
             MoveSpeed *= SpeedMultiplier;
         }
 
